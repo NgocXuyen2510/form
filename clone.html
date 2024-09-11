@@ -13,10 +13,10 @@
       }
       .scale-label {
           display: inline-block;
-          width: 20px;
+          width: 50px;
       }
       .scale-radio {
-          margin: 5px;
+          margin: 20px;
       }
   </style>
   <style>
@@ -96,7 +96,7 @@
         height: 150px;
         width: 40vw;
         margin: 13px;
-        padding: 10px;
+        padding: 0px;
         padding-left: 30px;
         margin-bottom: 0;
         border-radius: 10px;
@@ -186,6 +186,7 @@
         border-bottom: 1px solid black;
         width: 90%;
         padding: 5px;
+        outline: none;
       }
      
        button {
@@ -298,43 +299,43 @@
       </div>
        <!-- Multiple Choice -->
       <div class = "mcq">
-        <h3>MCQ <span style="color: red;">*</span></h3>
-        <label><input type="radio" name="mcq" value="Option 1" id="" required>Option 1</label>
+        <h3>Bạn có cảm thấy dễ dàng trong việc tiếp cận và sử dụng dịch vụ của công ty không? <span style="color: red;">*</span></h3>
+        <label><input type="radio" name="mcq" value="Option 1" id="" required>Rất dễ dàng</label>
         <br>
-        <label><input type="radio" name="mcq" value="Option 2" id="" required>Option 2</label>
+        <label><input type="radio" name="mcq" value="Option 2" id="" required>Bình thường</label>
         <br>
-        <label><input type="radio" name="mcq" value="Option 3" id="" required>Option 3</label>
+        <label><input type="radio" name="mcq" value="Option 3" id="" required>Cần cải thiện</label>
       </div>
 
       <!-- Checkbox -->
     <div class = "checkbox">
-      <h3>Checkbox <span style="color: red;">*</span></h3>
-      <label><input type="checkbox" name="checkbox[]" value="Option 1" id="" required>Option 1</label>
+      <h3>Bạn đã có trải nghiệm tốt nhất với dịch vụ của chúng tôi ở những lĩnh vực nào? (Chọn tất cả những gì áp dụng)  <span style="color: red;">*</span></h3>
+      <label><input type="checkbox" name="checkbox[]" value="Option 1" id="" required>Chất lượng sản phẩm </label>
       <br>
-      <label><input type="checkbox" name="checkbox[]" value="Option 2" id="" required>Option 2</label>
+      <label><input type="checkbox" name="checkbox[]" value="Option 2" id="" required>Giá cả</label>
       <br>
-      <label><input type="checkbox" name="checkbox[]" value="Option 3" id="" required>Option 3</label>
+      <label><input type="checkbox" name="checkbox[]" value="Option 3" id="" required>Dịch vụ khách hàng</label>
     </div>
 
     <!-- Short Answer -->
     <div class = 'sh-ans'>
-      <h3>Short Answer <span style="color: red;">*</span></h3>
+      <h3>Bạn có gặp bất kỳ vấn đề nào khi sử dụng sản phẩm/dịch vụ của chúng tôi không? Nếu có, vui lòng mô tả. <span style="color: red;">*</span></h3>
       <input type="text" name="shortAnswer" placeholder= "Your Answer" id="" required>
     </div>
 
     <!-- Paragraph -->
     <div class ="para">
-      <h3>Paragraph <span style="color: red;">*</span></h3>
+      <h3>Điều gì khiến bạn ấn tượng nhất hoặc không hài lòng nhất khi trải nghiệm dịch vụ/sản phẩm của chúng tôi? <span style="color: red;">*</span></h3>
       <input type="text" name="shortAnswer" placeholder= "Your Answer" id="" required>
     </div>
 
     <!-- Drop Down -->
     <div class = "drdo">
-      <h3>Dropdown <span style="color: red;">*</span></h3>
+      <h3>Bạn có cảm thấy dễ dàng trong việc tiếp cận và sử dụng dịch vụ của công ty không? <span style="color: red;">*</span></h3>
       <select name="dropDown">
-        <option value="Option 1" id="" required>Option 1</option>
-        <option value="Option 2" id="" required>Option 2</option>
-        <option value="Option 3" id="" required>Option 3</option>
+        <option value="Option 1" id="" required>Rất dễ dàng</option>
+        <option value="Option 2" id="" required>Dễ dàng</option>
+        <option value="Option 3" id="" required>Bình thường</option>
       </select>
     </div>
 
@@ -347,13 +348,13 @@
 
      <!-- Linear Scale -->
     <div class = "linear">
-      <h3>linear Scale <span style="color: red;">*</span></h3>
+      <h3>Chất lượng dịch vụ của công ty có đáp ứng được nhu cầu của bạn không?<span style="color: red;">*</span></h3>
   <div class="scale-container">
-      <div class="scale-label">1</div>
-      <div class="scale-label">2</div>
-      <div class="scale-label">3</div>
-      <div class="scale-label">4</div>
-      <div class="scale-label">5</div>
+      <div class="scale-label">Rất tốt</div>
+      <div class="scale-label">Tốt</div>
+      <div class="scale-label">Bình Thường</div>
+      <div class="scale-label">Kém</div>
+      <div class="scale-label">Rất Kém</div>
       <br>
       <label>Worst</label>
       <input class="scale-radio" type="radio" name="linearScale" value="1" id="" required>
@@ -367,29 +368,29 @@
 
   <!-- Multi Choice Grid -->
   <div class = "mcg">
-    <h3>Multi Choice Grid <span style="color: red;">*</span></h3>
+    <h3>Những vấn đề nào bạn thường gặp phải khi liên hệ với dịch vụ khách hàng? (Chọn tất cả các vấn đề áp dụng) <span style="color: red;">*</span></h3>
     <div class="table-container">
   <table>
     <tr>
       <th></th>
-      <th>Column 1</th>
-      <th>Column 2</th>
-      <th>Column 3</th>
+      <th>Tốt</th>
+      <th>Bình thường</th>
+      <th>Kém</th>
     </tr>
     <tr>
-      <td>Row 1</td>
+      <td>Thời gian phản hồi</td>
       <td><input type="radio" name="grid[Row 1]" value="Column 1"></td>
       <td><input type="radio" name="grid[Row 1]" value="Column 2"></td>
       <td><input type="radio" name="grid[Row 1]" value="Column 3"></td>
     </tr>
     <tr>
-      <td>Row 2</td>
+      <td>Thái độ phục vụ</td>
       <td><input type="radio" name="grid[Row 2]" value="Column 1"></td>
       <td><input type="radio" name="grid[Row 2]" value="Column 2"></td>
       <td><input type="radio" name="grid[Row 2]" value="Column 3"></td>
     </tr>
     <tr>
-      <td>Row 3</td>
+      <td>Giải quyết vấn đề</td>
       <td><input type="radio" name="grid[Row 3]" value="Column 1"></td>
       <td><input type="radio" name="grid[Row 3]" value="Column 2"></td>
       <td><input type="radio" name="grid[Row 3]" value="Column 3"></td>
@@ -400,29 +401,29 @@
 
   <!-- Tick Box Grid -->
   <div class = "tcg">
-    <h3>Tick Box Grid <span style="color: red;">*</span></h3>
+    <h3>Những yếu tố nào bạn cảm thấy cần được cải thiện trong trải nghiệm mua hàng của bạn? (Chọn tất cả các yếu tố áp dụng) <span style="color: red;">*</span></h3>
     <div class="table-container">
     <table>
     <tr>
       <th></th>
-      <th>Column 1</th>
-      <th>Column 2</th>
-      <th>Column 3</th>
+      <th>Tốt</th>
+      <th>Bình Thường</th>
+      <th>Kém</th>
     </tr>
     <tr>
-      <td>Row 1</td>
+      <td>Giao diện website</td>
       <td><input type="checkbox" name="tickBoxGrid[Row 1][Column 1]"  id="" required></td>
       <td><input type="checkbox" name="tickBoxGrid[Row 1][Column 2]"  id="" required></td>
       <td><input type="checkbox" name="tickBoxGrid[Row 1][Column 3]"  id="" required></td>
     </tr>
     <tr>
-      <td>Row 2</td>
+      <td>Quy trình thanh toán</td>
       <td><input type="checkbox" name="tickBoxGrid[Row 2][Column 1]"  id="" required></td>
       <td><input type="checkbox" name="tickBoxGrid[Row 2][Column 2]"  id="" required></td>
       <td><input type="checkbox" name="tickBoxGrid[Row 2][Column 3]"  id="" required></td>
     </tr>
     <tr>
-      <td>Row 3</td>
+      <td>Tốc độ xử lý đơn hàng</td>
       <td><input type="checkbox" name="tickBoxGrid[Row 3][Column 1]"  id="" required></td>
       <td><input type="checkbox" name="tickBoxGrid[Row 3][Column 2]"  id="" required></td>
       <td><input type="checkbox" name="tickBoxGrid[Row 3][Column 3]"  id="" required></td>
